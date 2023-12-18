@@ -25,5 +25,8 @@ public class Index {
         WebElement element = wd.findElement(By.tagName("button"));
         List<WebElement> list = wd.findElements(By.tagName("a"));
     }
-   
+   @AfterClass
+    public void quitBrowser (){
+       wd.quit();
+   }
 }
